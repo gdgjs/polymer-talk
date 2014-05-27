@@ -21,7 +21,7 @@ var SLIDE_CONFIG = {
   presenters: [{
     name: 'Lucas da Silva',
     company: 'Front-End Ops, Alkaw',
-    gplus: 'http://plus.google.com/+LucasChurchill',
+    gplus: 'http://google.com/+LucasChurchill',
     twitter: '@_agtlucas',
     www: 'http://agtlucas.com',
     github: 'http://github.com/agtlucas'
