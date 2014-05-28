@@ -1,14 +1,17 @@
+@charset "UTF-8";
+
 @import "base";
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-$social-tags: '#yourhashtag';
+$social-tags: '#gdgjs #polymergdgjs #naovaitercopa';
 $brand-small-icon-size: 30px;
 
 $gray-1: #e6e6e6;
 $gray-2: #a9a9a9;
 $gray-3: #797979;
 $gray-4: #515151;
+$pl-bg: #1f2036;
 
 $brand-blue: rgb(67, 135, 253);
 $brand-blue-secondary: #3c8ef3;
@@ -108,7 +111,6 @@ slides > slide {
   margin-top: -$slide-height / 2;
   padding: $slide-top-bottom-padding $slide-left-right-padding;
 
-  @include border-radius($slide-border-radius);
   //@include box-shadow(5px 5px 20px $gray-4);
   @include transition(all 0.6s ease-in-out);
 
@@ -975,7 +977,7 @@ aside.gdbar {
       display: none !important;
     }
   }
-  
+
   slides {
     slide {
       &.backdrop {
@@ -1080,4 +1082,19 @@ aside.gdbar {
   pre, code {
     font-family: monospace !important;
   }
+}
+
+.polymer-background {
+  background: $pl-bg;
+}
+
+.polymer-logo-big {
+  height: 350px !important;
+}
+
+.job-path {
+  width: 800px;
+  height: auto;
+  margin: 80px auto;
+  display: block;
 }
