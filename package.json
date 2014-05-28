@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/gdgjs/polymer-talk/issues"
   },
-  "homepage": "https://github.com/gdgjs/polymer-talk"
+  "homepage": "https://github.com/gdgjs/polymer-talk",
+  "devDependencies": {
+    "grunt-contrib-compass": "^0.8.0",
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "^0.4.5"
+  }
 }
