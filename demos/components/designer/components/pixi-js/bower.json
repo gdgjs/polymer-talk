@@ -1,7 +1,0 @@
-{
-  "name": "pixi-js",
-  "private": true,
-  "dependencies": {
-    "polymer": "Polymer/polymer#master"
-  }
-}

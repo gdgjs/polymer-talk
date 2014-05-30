@@ -1,7 +1,0 @@
-{
-  "name": "typeahead-input",
-  "private": true,
-  "dependencies": {
-    "polymer": "Polymer/polymer#master"
-  }
-}
