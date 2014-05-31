@@ -311,7 +311,7 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
   <h2>Shadow DOM</h2>
   <div class="browser-support-row">
     <div><img src="images/logos/browsers/safari_logo.png"></div>
-    <div class="supported partial"><img src="images/logos/browsers/ff_logo.png"></div>
+    <div class="supported"><img src="images/logos/browsers/ff_logo.png"></div>
     <div class="supported"><img src="images/logos/chrome_logo.png"></div>
     <div class="supported"><img src="images/logos/browsers/opera_logo.png"></div>
     <div><img src="images/logos/browsers/ie10_logo.png"></div>
@@ -2035,7 +2035,7 @@ shadow.innerHTML =
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article class="flexbox vcenter"><h2 class="faded">Utilizando a plataforma, <em>platform.js</em></h2></article>
+    <article class="flexbox vcenter"><h2 class="faded">Utilizando a plataforma</em></h2></article>
 
 </slide>
 
@@ -3069,7 +3069,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
                  attributes=&quot;count value autofocus&quot;&gt;
   &lt;template&gt;
     &lt;span id=&quot;container&quot; tabindex=&quot;0&quot;
-            on-keydown=&quot;{{keydownAction}}&quot; role=&quot;slider&quot;&gt;
+            on-keydown=&quot;{{keydownAction}}&quot; <b>role=&quot;slider&quot;&gt;</b>
       &lt;template repeat=&quot;{{star in stars}}&quot;&gt;
         &lt;span id=&quot;star&quot; index=&quot;{{star.index}}&quot;
           class=&quot;{{star.starClass}}&quot; on-tap=&quot;{{updateValue}}&quot;&gt;
