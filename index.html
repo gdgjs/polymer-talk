@@ -76,6 +76,19 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
    </article>
  </slide>
 
+ <slide  class="fullviewport" style="background:url('images/hidecat.gif') no-repeat 50% 30%; background-size:cover; " >
+
+    <hgroup>
+      <span>
+
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+
+</slide>
+
 
 <!--
 <slide id="title-slide" class="nobackdrop nobackground do-transition" style="background:#EEEEEE; background-image:url('images/poly.fw.png'); background-size:cover;">-->
@@ -215,6 +228,8 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
 
 </slide>
 -->
+
+
 <slide data-body-class="core-fill" >
     <hgroup>
       <span>
@@ -226,16 +241,6 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
     <!-- <article class="flexbox vcenter"><h2 class="faded">Elements are <em>encapsulated</em></h2></article> -->
 </slide>
 
-<slide  class="highlight fullviewport" style="background:url('images/gifs/blinkhomer.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
-    <hgroup>
-      <span>
-
-      </span>
-      <h3></h3>
-    </hgroup>
-    <article ></article>
-</slide>
-
 <slide>
     <hgroup>
       <span>
@@ -244,6 +249,16 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
       <h3></h3>
     </hgroup>
     <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;">Web Components é um conjunto de <strong>padrões</strong> que permitem os desenvolvedores <strong>extender o HTML</strong>.</h2></article>
+</slide>
+
+<slide  class="highlight fullviewport" style="background:url('images/gifs/blinkhomer.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
+    <hgroup>
+      <span>
+
+      </span>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
 </slide>
 
 <slide  class="nobackdrop nobackground browser-support"   >
@@ -296,7 +311,7 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
   <h2>Shadow DOM</h2>
   <div class="browser-support-row">
     <div><img src="images/logos/browsers/safari_logo.png"></div>
-    <div class="supported partial"><img src="images/logos/browsers/ff_logo.png"></div>
+    <div class="supported"><img src="images/logos/browsers/ff_logo.png"></div>
     <div class="supported"><img src="images/logos/chrome_logo.png"></div>
     <div class="supported"><img src="images/logos/browsers/opera_logo.png"></div>
     <div><img src="images/logos/browsers/ie10_logo.png"></div>
@@ -330,8 +345,27 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;">Nossos elementos customizados! <br>&lt;minha-tag&gt;&lt;/minha-tag&gt;</article>
+    <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;">Nossos elementos customizados! <br></article>
 
+</slide>
+
+<slide>
+  <article class="flexbox vcenter"><pre class="prettyprint" data-lang="HTML">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;script src="../platform/platform.js"&gt;&lt;/script&gt;
+  &lt;link rel="import" href="minha-tag.html"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  <b>&lt;minha-tag&gt;&lt;/minha-tag&gt;</b>
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre></article>
 </slide>
 
 <slide class="highlight fullviewport" style="background:url('images/gifs/minions.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
@@ -369,6 +403,25 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
 
 </slide>
 
+<slide>
+  <article class="flexbox vcenter"><pre class="prettyprint" data-lang="HTML">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;script src="../platform/platform.js"&gt;&lt;/script&gt;
+  <b>&lt;link rel="import" href="minha-tag.html"&gt;</b>
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;minha-tag&gt;&lt;/minha-tag&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre></article>
+</slide>
+
 <slide class="highlight fullviewport" style="background:url('images/gifs/obamarly.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
 
     <hgroup>
@@ -402,6 +455,19 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
     </hgroup>
     <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;">&lt;template&gt;&lt;/template&gt;</article>
 
+</slide>
+
+<slide>
+  <article class="flexbox vcenter"><pre class="prettyprint" data-lang="HTML">
+
+&lt;link rel="import" href="../bower_components/polymer/polymer.html"&gt;
+&lt;polymer-element name="my-element" noscript&gt;
+  <b>&lt;template&gt;</b>
+    &lt;style&gt;h2 { color: orange; }&lt;/style&gt;
+    &lt;h2&gt;Hello from my-element!&lt;/h2&gt;
+  <b>&lt;/template&gt;</b>
+&lt;/polymer-element&gt;
+  </pre></article>
 </slide>
 
 <slide class="highlight fullviewport" style="background:url('images/gifs/lego.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
@@ -469,7 +535,7 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
       <span>
 
       </span>
-      <h2>#sqn</h2>
+      <h2>:notsure: #sqn</h2>
     </hgroup>
     <article ></article>
 
@@ -487,6 +553,18 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
 </slide>
 
 <slide class="highlight fullviewport" style="background:url('images/shadow/shadow-trees.svg') no-repeat 10% 10%; background-size:cover; background-color:white">
+
+    <hgroup>
+      <span>
+
+      </span>
+      <!-- <h2></h2> -->
+    </hgroup>
+    <article ></article>
+
+</slide>
+
+<slide class="highlight fullviewport" style="background:url('images/shadow/shadow-rendering.svg') no-repeat 10% 10%; background-size:cover; background-color:white">
 
     <hgroup>
       <span>
@@ -516,7 +594,7 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;"><strong>Polymer</strong> não é um framework. Com Polymer, o framework é o <strong>DOM</strong>.</article>
+    <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;"><strong>Polymer</strong> não é um framework. <br> Com Polymer, o framework é o <strong>DOM</strong>.</article>
 
 </slide>
 
@@ -572,7 +650,18 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;">X-Tag by Mozilla</article>
+    <article class="flexbox vcenter"><h2 style="font-size: 60px; line-height: 1.25;">X-Tag by Mozilla</article>
+
+</slide>
+
+<slide>
+    <hgroup>
+      <span>
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 style="font-size: 60px; line-height: 1.25;">Bosonic</article>
 
 </slide>
 
@@ -623,7 +712,7 @@ Créditos: http://addyosmani.github.io/fitc-wccdt
 
   <div id="diagram-platform" class="diagram-explanation" data-build-index="4">
     <h3 class="platform bold">Plataforma</h3>
-    <p>Web Components polyfills para os <br>browsers modernos</p>
+    <p>Polyfills para os browsers modernos</p>
   </div>
 
   <div id="diagram-native" class="diagram-explanation" data-build-index="3">
@@ -1946,7 +2035,7 @@ shadow.innerHTML =
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article class="flexbox vcenter"><h2 class="faded">Utilizando a plataforma, <em>platform.js</em></h2></article>
+    <article class="flexbox vcenter"><h2 class="faded">Utilizando a plataforma</em></h2></article>
 
 </slide>
 
@@ -2867,7 +2956,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
 
 </slide>
 
-<slide    data-body-class="core-fill" >
+<slide    data-body-class="core-fill" hidden >
 
     <hgroup>
       <span>
@@ -2883,7 +2972,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
 
 </slide>
 
-<slide id="automatic-node-finding"    >
+<slide id="automatic-node-finding"   hidden >
 
     <hgroup>
       <span>
@@ -2923,7 +3012,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
 
 </slide>
 
-<slide    data-body-class="core-fill" >
+<slide    data-body-class="core-fill">
 
     <hgroup>
       <span>
@@ -2939,7 +3028,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
 
 </slide>
 
-<slide   >
+<slide  hidden >
 
     <hgroup>
       <span>
@@ -2956,7 +3045,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
       <ul class="build">
         <li>Todos os elementos têm alternativas de texto significativas?</li>
         <li>Todas as funcionalidades podem ser usadas sem o mouse?</li>
-        <li>Seu Custom element está maracado para ser acessível?</li>
+        <li>Seu Custom element está marcado para ser acessível?</li>
         <li>Os usuários podem entender tudo sem depender da cor?</li>
       </ul>
     </article>
@@ -2980,7 +3069,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
                  attributes=&quot;count value autofocus&quot;&gt;
   &lt;template&gt;
     &lt;span id=&quot;container&quot; tabindex=&quot;0&quot;
-            on-keydown=&quot;{{keydownAction}}&quot; role=&quot;slider&quot;&gt;
+            on-keydown=&quot;{{keydownAction}}&quot; <b>role=&quot;slider&quot;&gt;</b>
       &lt;template repeat=&quot;{{star in stars}}&quot;&gt;
         &lt;span id=&quot;star&quot; index=&quot;{{star.index}}&quot;
           class=&quot;{{star.starClass}}&quot; on-tap=&quot;{{updateValue}}&quot;&gt;
@@ -3355,7 +3444,72 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
 
 </slide>
 
-<slide hidden>
+<slide  data-body-class="core-fill" >
+
+    <hgroup>
+      <span>
+
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vleft"><h2 class="faded" style="font-size: 54px;">Polymer atualmente está na versão Alpha.</h2></article>
+
+</slide>
+
+<slide  class="fullviewport" style="background:url('images/gifs/wts.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
+
+    <hgroup>
+      <span>
+
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+
+</slide>
+
+<slide  data-body-class="core-fill" >
+
+    <hgroup>
+      <span>
+
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vleft"><h2 class="faded" style="font-size: 54px;">Versão beta assim que um navegador implementar todos os padrões Web Components.</h2></article>
+
+</slide>
+
+<slide  data-body-class="" >
+
+    <hgroup>
+      <span>
+
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 class="faded" style="font-size: 54px;">Chrome 36</h2></article>
+
+</slide>
+
+<slide  class="fullviewport" style="background:url('images/gifs/yesh.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
+
+    <hgroup>
+      <span>
+
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+
+</slide>
+
+<slide>
 
     <hgroup>
       <span>
@@ -3364,16 +3518,17 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
 
 
       </span>
-      <h2>Polymer Tooling</h2>
-      <h3>Helping you stay more productive</h3>
+      <h2>Ferramentas e recursos</h2>
+      <h3>Aumentando sua produtividade</h3>
     </hgroup>
     <article >
 <ul class="build">
-<li><a href="https://github.com/PolymerLabs/untitled-element">Boilerplate</a> - structure &amp; docs (<a href="media/untitled.html">video</a>)</li>
-<li><a href="http://bower.io">Bower</a> - install & share Polymer elements</li>
-<li><a href="http://yeoman.io">Yeoman</a> - scaffold Polymer apps (<a href="yt-jukebox/handcoded/">example</a>)</li>
-<li><a href="https://github.com/Polymer/vulcanize">Vuncalize</a> - concatenate Web Components</li>
-<li><a href="http://customelements.io">CustomElements.io</a> - elements by the community (<a href="media/customelements.html">video</a>)</li>
+<li><a href="https://github.com/PolymerLabs/untitled-element">Boilerplate</a></li>
+<li><a href="http://bower.io">Bower</a></li>
+<li><a href="http://yeoman.io">Yeoman</a></li>
+<li><a href="https://github.com/Polymer/vulcanize">Vulcanize</a></li>
+<li><a href="http://webcomponents.org/">WebComponents.org</a></li>
+<li><a href="http://customelements.io">CustomElements.io</a></li>
 </ul>
 
 
@@ -3469,6 +3624,21 @@ X-Tag can be used as normal in an import
       <h3></h3>
     </hgroup>
     <article ></article>
+
+</slide>
+
+<slide data-body-class="le-dark" >
+
+    <hgroup>
+      <span>
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <h2 style="color:#fff;">The only easy day was yesterday. <br>
+      <span style="font-size:30px;">- Navy SEALs motto</span></h2>
+    </article>
 
 </slide>
 
